@@ -1,4 +1,4 @@
-package Hometask2;
+package HomeTask2;
 
 public class MementoDocument {
     private String text;

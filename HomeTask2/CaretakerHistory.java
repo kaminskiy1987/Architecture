@@ -1,4 +1,4 @@
-package Hometask2;
+package HomeTask2;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -9,11 +9,12 @@ public class CaretakerHistory {
 
     public CaretakerHistory() {
         history = new ArrayDeque<>();
-        this.currentIndex = -1;           // -1  = очередь пуста, иначе соответствует индексу элемента
+        this.currentIndex = -1; // -1 = очередь пуста, иначе соответствует индексу элемента
     }
 
     /*
-     * Метод позволяет перемещаться между элементами в очереди состояний документа (history)
+     * Метод позволяет перемещаться между элементами в очереди состояний документа
+     * (history)
      * Если value = 1, перемещаемся вперед к следующему элементу
      * Если value = -1, перемещаемся назад к предыдущему элементу
      */
@@ -26,7 +27,8 @@ public class CaretakerHistory {
     }
 
     /*
-     * Метод добавляет новое состояние memento в конец очереди истории изменения состояний
+     * Метод добавляет новое состояние memento в конец очереди истории изменения
+     * состояний
      */
     public void addLast(MementoDocument memento) {
         System.out.println("Сохранение документа");

@@ -1,7 +1,7 @@
-package Hometask2;
+package HomeTask2;
 
 public class OriginatorDocument {
-    private String text = "";   // текст документа
+    private String text = ""; // текст документа
 
     public void append(String text) {
         this.text += text;
@@ -13,7 +13,7 @@ public class OriginatorDocument {
     }
 
     public MementoDocument saveState() {
-        return new MementoDoc(text);
+        return new MementoDocument(text);
     }
 
     public void restoreState(MementoDocument memento) {
