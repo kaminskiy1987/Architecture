@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game SPA</title>
+
+    <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img class="header__logo" src="./img/nav_1.svg" alt="home">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/" onclick="route()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/offer" onclick="route()">Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/product" onclick="route()">Product</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-item dropdown header__menu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="header__menuIcon" src="./img/nav_3.svg" alt="Show menu">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="menu__title">MENU</div>
+                            <li><a class="dropdown-item" href="#">MAN</a>
+                                <ul>
+                                    <li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Bags</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Denim</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">WOMAN</a>
+                                <ul>
+                                    <li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Jackets &amp; Coats</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Polos</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">KIDS</a>
+                                <ul>
+                                    <li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Jackets &amp; Coats</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Polos</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#">
+                        <img src="./img/nav_4.svg" alt="Profile" class="header__profileIcon">
+                    </a>
+                    <div class="header__basket">
+                        <img src="./img/nav_5.svg" alt="Go to basket" class="header__basketIcon">
+                        <div class="header__basketCounter">
+                            <img src="./img/Ellipse 2.svg" alt="" class="header__basketCounterIcon">
+                            <p class="header__basketCounterText">5</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="main-page">
+
+        </div>
+    </div>
+
+    <script src="/script/router.js"></script>
+    <script src="/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
